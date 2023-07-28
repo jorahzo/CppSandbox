@@ -1,0 +1,12 @@
+╱╱╭╮╱╱╱╱╱╱╭╮
+╱╱┃┃╱╱╱╱╱╱┃┃
+╭━╯┣━━┳╮╭╮┃┃╭━━┳━━╮
+┃╭╮┃┃━┫╰╯┃┃┃┃╭╮┃╭╮┃
+┃╰╯┃┃━╋╮╭╯┃╰┫╰╯┃╰╯┃
+╰━━┻━━╯╰╯╱╰━┻━━┻━╮┃
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━
+
+[ ] Fix type conversion error for srand(time(NULL))
+[ ] Ensure user cannot enter non-supported data types for menu
+[ ] Explore a way to make menu modular (perhaps a class?)╯
