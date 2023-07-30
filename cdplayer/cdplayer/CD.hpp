@@ -12,18 +12,14 @@
 #include <string>
 #include <vector>
 
+//
 class CD{
 public:
-    CD(std::vector<std::string> tracksIn, int runtimeIn) : tracks(tracksIn), runtime(runtimeIn) {}
-    // Setters + Getters
-    void setTracks();
-    std::vector<std::string> getTracks();
-    void setRuntime();
-    int getRuntime();
+    CD(std::string mixtapeNameIn, std::vector<std::string> tracksIn, int runtimeIn) : mixtapeName(mixtapeNameIn), tracks(tracksIn), runtime(runtimeIn) {};
 private:
+    std::string mixtapeName;
     std::vector<std::string> tracks;
     int runtime;
-    
 };
 
 

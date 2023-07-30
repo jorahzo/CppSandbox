@@ -10,6 +10,7 @@
 		4D3C11E22A73451300847E6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C11E12A73451300847E6E /* main.cpp */; };
 		4D3C11ED2A73455B00847E6E /* CD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C11EB2A73455B00847E6E /* CD.cpp */; };
 		4D3C11F02A73457900847E6E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C11EE2A73457900847E6E /* Player.cpp */; };
+		4DE896982A771C4000063DC4 /* Narration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896962A771C4000063DC4 /* Narration.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4D3C11EC2A73455B00847E6E /* CD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CD.hpp; sourceTree = "<group>"; };
 		4D3C11EE2A73457900847E6E /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		4D3C11EF2A73457900847E6E /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		4DE896962A771C4000063DC4 /* Narration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Narration.cpp; sourceTree = "<group>"; };
+		4DE896972A771C4000063DC4 /* Narration.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Narration.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				4D3C11E12A73451300847E6E /* main.cpp */,
 				4D3C11EB2A73455B00847E6E /* CD.cpp */,
 				4D3C11EC2A73455B00847E6E /* CD.hpp */,
+				4DE896962A771C4000063DC4 /* Narration.cpp */,
+				4DE896972A771C4000063DC4 /* Narration.hpp */,
 				4D3C11EE2A73457900847E6E /* Player.cpp */,
 				4D3C11EF2A73457900847E6E /* Player.hpp */,
 			);
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE896982A771C4000063DC4 /* Narration.cpp in Sources */,
 				4D3C11ED2A73455B00847E6E /* CD.cpp in Sources */,
 				4D3C11E22A73451300847E6E /* main.cpp in Sources */,
 				4D3C11F02A73457900847E6E /* Player.cpp in Sources */,
