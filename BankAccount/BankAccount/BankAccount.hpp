@@ -15,9 +15,10 @@
 class BankAccount: public Bank{
 public:
     BankAccount(std::string accountNumInput, float balanceInput) : accountNumber(accountNumInput), accountBalance(balanceInput) {};
-    float deposit(float depositAmount);
-    float withdraw();
+    void deposit(float depositAmount);
+    void withdraw(float withdrawAmount);
     void display();
+    std::string getAccountNumber();
 private:
     std::string accountNumber;
     float accountBalance;

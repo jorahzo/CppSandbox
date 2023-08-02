@@ -10,7 +10,9 @@
 
 #include <stdio.h>
 #include <vector>
-#include "BankAccount.hpp"
+
+//forward declaration of BankAccount
+class BankAccount;
 
 class Bank{
 public:
