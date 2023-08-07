@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		4DE896D22A7CA9A100063DC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896D12A7CA9A100063DC4 /* main.cpp */; };
 		4DE896DA2A7CA9B400063DC4 /* fighter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896D82A7CA9B400063DC4 /* fighter.cpp */; };
-		4DE896DD2A7CB40800063DC4 /* jobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896DB2A7CB40800063DC4 /* jobs.cpp */; };
+		4DE896E32A80591B00063DC4 /* gameflow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E12A80591B00063DC4 /* gameflow.cpp */; };
+		4DE896E82A8062A100063DC4 /* warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E62A8062A100063DC4 /* warrior.cpp */; };
+		4DE896EB2A8062B500063DC4 /* thief.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E92A8062B500063DC4 /* thief.cpp */; };
+		4DE896EE2A8062BE00063DC4 /* mage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896EC2A8062BE00063DC4 /* mage.cpp */; };
+		4DE896F12A8062D300063DC4 /* archer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896EF2A8062D300063DC4 /* archer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +33,16 @@
 		4DE896D12A7CA9A100063DC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4DE896D82A7CA9B400063DC4 /* fighter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fighter.cpp; sourceTree = "<group>"; };
 		4DE896D92A7CA9B400063DC4 /* fighter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fighter.hpp; sourceTree = "<group>"; };
-		4DE896DB2A7CB40800063DC4 /* jobs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jobs.cpp; sourceTree = "<group>"; };
-		4DE896DC2A7CB40800063DC4 /* jobs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = jobs.hpp; sourceTree = "<group>"; };
+		4DE896E12A80591B00063DC4 /* gameflow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameflow.cpp; sourceTree = "<group>"; };
+		4DE896E22A80591B00063DC4 /* gameflow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameflow.hpp; sourceTree = "<group>"; };
+		4DE896E62A8062A100063DC4 /* warrior.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = warrior.cpp; sourceTree = "<group>"; };
+		4DE896E72A8062A100063DC4 /* warrior.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = warrior.hpp; sourceTree = "<group>"; };
+		4DE896E92A8062B500063DC4 /* thief.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thief.cpp; sourceTree = "<group>"; };
+		4DE896EA2A8062B500063DC4 /* thief.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thief.hpp; sourceTree = "<group>"; };
+		4DE896EC2A8062BE00063DC4 /* mage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mage.cpp; sourceTree = "<group>"; };
+		4DE896ED2A8062BE00063DC4 /* mage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mage.hpp; sourceTree = "<group>"; };
+		4DE896EF2A8062D300063DC4 /* archer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = archer.cpp; sourceTree = "<group>"; };
+		4DE896F02A8062D300063DC4 /* archer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = archer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +76,44 @@
 			isa = PBXGroup;
 			children = (
 				4DE896D12A7CA9A100063DC4 /* main.cpp */,
-				4DE896D82A7CA9B400063DC4 /* fighter.cpp */,
-				4DE896D92A7CA9B400063DC4 /* fighter.hpp */,
-				4DE896DB2A7CB40800063DC4 /* jobs.cpp */,
-				4DE896DC2A7CB40800063DC4 /* jobs.hpp */,
+				4DE896E12A80591B00063DC4 /* gameflow.cpp */,
+				4DE896E22A80591B00063DC4 /* gameflow.hpp */,
+				4DE896F32A8063AF00063DC4 /* jobs */,
 			);
 			path = LetsFight;
+			sourceTree = "<group>";
+		};
+		4DE896F32A8063AF00063DC4 /* jobs */ = {
+			isa = PBXGroup;
+			children = (
+				4DE896F42A80640700063DC4 /* base */,
+				4DE896F52A80641600063DC4 /* children */,
+			);
+			path = jobs;
+			sourceTree = "<group>";
+		};
+		4DE896F42A80640700063DC4 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				4DE896D92A7CA9B400063DC4 /* fighter.hpp */,
+				4DE896D82A7CA9B400063DC4 /* fighter.cpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		4DE896F52A80641600063DC4 /* children */ = {
+			isa = PBXGroup;
+			children = (
+				4DE896E62A8062A100063DC4 /* warrior.cpp */,
+				4DE896E72A8062A100063DC4 /* warrior.hpp */,
+				4DE896E92A8062B500063DC4 /* thief.cpp */,
+				4DE896EA2A8062B500063DC4 /* thief.hpp */,
+				4DE896EC2A8062BE00063DC4 /* mage.cpp */,
+				4DE896ED2A8062BE00063DC4 /* mage.hpp */,
+				4DE896EF2A8062D300063DC4 /* archer.cpp */,
+				4DE896F02A8062D300063DC4 /* archer.hpp */,
+			);
+			path = children;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE896F12A8062D300063DC4 /* archer.cpp in Sources */,
+				4DE896E82A8062A100063DC4 /* warrior.cpp in Sources */,
 				4DE896D22A7CA9A100063DC4 /* main.cpp in Sources */,
+				4DE896EB2A8062B500063DC4 /* thief.cpp in Sources */,
 				4DE896DA2A7CA9B400063DC4 /* fighter.cpp in Sources */,
-				4DE896DD2A7CB40800063DC4 /* jobs.cpp in Sources */,
+				4DE896EE2A8062BE00063DC4 /* mage.cpp in Sources */,
+				4DE896E32A80591B00063DC4 /* gameflow.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
