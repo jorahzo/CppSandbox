@@ -9,6 +9,7 @@
 #define thief_hpp
 
 #include <stdio.h>
+#include "fighter.hpp"
 
 // Defining Thief child class from Fighter
 class Thief : public Fighter{
@@ -20,7 +21,6 @@ public:
     void kick(Fighter *fightername);
 private:
 };
- */
 
 #endif /* thief_hpp */
 

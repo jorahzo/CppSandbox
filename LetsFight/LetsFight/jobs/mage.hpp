@@ -9,9 +9,7 @@
 #define mage_hpp
 
 #include <stdio.h>
-
-#endif /* mage_hpp */
-
+#include "fighter.hpp"
 
 // Defining Mage child class from Fighter
 class Mage : public Fighter{
@@ -22,3 +20,5 @@ public:
     void heal();
 private:
 };
+
+#endif /* mage_hpp */
