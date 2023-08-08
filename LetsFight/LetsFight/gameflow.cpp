@@ -57,7 +57,7 @@ std::unique_ptr<Fighter> Gameflow::characterInit(std::string playerUsername){
 
 // Here we are generating the enemy character. We should be able to combine this with the player init above.
 std::unique_ptr<Fighter> Gameflow::enemyInit(){
-    srand(time(NULL));
+    srand(static_cast<unsigned int>(time(NULL)));
     int enemyChoice = 1+rand()%4;
     std::unique_ptr<Fighter> enemyCharacter = nullptr;
     switch (enemyChoice) {
@@ -78,11 +78,3 @@ std::unique_ptr<Fighter> Gameflow::enemyInit(){
     }
     return enemyCharacter;
 }
-
-// thisFighter refers to the user making the input, enemyFighter is who will be affected by said input
-void Gameflow::moveSelect(Fighter* thisFighter, Fighter* enemyFighter){
-    if (thisFighter->npcCheck() == false){
-        std::cout << "Make a move\n\n";
-    }
-}
-

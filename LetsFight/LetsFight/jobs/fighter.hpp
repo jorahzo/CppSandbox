@@ -15,24 +15,25 @@ class Fighter{
 public:
     // Constructor
     Fighter(std::string usernameIn, int healthIn, int manaIn, int energyIn, bool npcIn=true) : username(usernameIn), health(healthIn), mana(manaIn), energy(energyIn), npc(npcIn){}
+    
     // Setters
-    void setHealth(int newHealth);
-    void setMana(int newMana);
-    void setEnergy(int newEnergy);
+    void setHealth(int newHealth), setMana(int newMana), setEnergy(int newEnergy);
+    
     // Getters
-    std::string getUsername();
-    int getHealth();
-    int getMana();
-    int getEnergy();
-    bool npcCheck();
+    std::string getUsername(), getMovePrompt();
+    int getHealth(), getMana(), getEnergy();
+    bool getNPC();
     void printUserStatus();
+    
+    // Select move
+    void moveSelect(Fighter* userAttacking, Fighter* userDefending);
+    
     // Move placeholders, these will be overriden on each child
-    void attackOne();
-    void attackTwo();
-    void utilityOne();
-    void utilityTwo();
+    void attackOne(Fighter* userAttacking, Fighter* userDefending), attackTwo(Fighter* userAttacking, Fighter* userDefending), utilityOne(Fighter* userAttacking), utilityTwo(Fighter* userAttacking);
+
 private:
-    std::string username;
+    // To be changed on a per child basis
+    std::string movePrompt {"Make a move!\n1. Attack 1\n2. Attack 2\n3. Utility 1\n4. Utility 2"}, username {""};
     bool npc;
     int health, mana, energy;
 };

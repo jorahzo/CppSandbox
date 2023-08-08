@@ -18,16 +18,11 @@ int main() {
     std::cin >> playerUsername;
     std::unique_ptr<Fighter> userCharacter = ThisGame.characterInit(playerUsername);
     std::unique_ptr<Fighter> enemyCharacter = ThisGame.enemyInit();
-    userCharacter->printUserStatus();
-    enemyCharacter->printUserStatus();
-    /*
-    srand(time(NULL));
-    int computerChoice = (1 + rand() % 1);
-    switch(computerChoice){
-        case 1:
-            Warrior computer("Staniel Governhands", 100, 0, 100);
+    userCharacter->moveSelect(userCharacter, enemyCharacter);
+    
+    while(true){
+        
     }
-     */
 
     
     return 0;

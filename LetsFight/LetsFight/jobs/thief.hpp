@@ -20,6 +20,7 @@ public:
     void dodge(Fighter *fightername);
     void kick(Fighter *fightername);
 private:
+    std::string movePrompt {"Make a move!\n1. Stab \n2. Poison \n3. Dodge \n4. Kick"}, username {""};
 };
 
 #endif /* thief_hpp */

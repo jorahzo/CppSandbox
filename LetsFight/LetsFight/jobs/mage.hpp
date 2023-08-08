@@ -19,6 +19,7 @@ public:
     void spellshock(Fighter *fightername);
     void heal();
 private:
+    std::string movePrompt {"Make a move!\n1. Poke 1\n2. Spellshock 2\n3. Heal 1\n4. Utility 2"}, username {""};
 };
 
 #endif /* mage_hpp */

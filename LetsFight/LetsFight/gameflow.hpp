@@ -16,8 +16,6 @@ public:
     // Class object initializations for user character and enemy character
     std::unique_ptr<Fighter> characterInit(std::string playerUsername);
     std::unique_ptr<Fighter> enemyInit();
-
-    
     void moveSelect(Fighter* thisFighter, Fighter* enemyFighter);
 private:
     bool gameOver;
