@@ -15,7 +15,7 @@ int main() {
     Hangman hangman;
     std::cout << hangman.returnHangman();
     std::cout << hangman.returnStyledWordBlank();
-    while(hangman.getTries() > 0){
+    while(hangman.getTries() > 0 || hangman.wordGuessed() == false){
         hangman.guessChar();
         hangman.addToHangman();
         std::cout << hangman.returnHangman();

@@ -68,7 +68,8 @@ void Hangman::addToHangman(){
           "/|\\  |\n"
           "/ \\  |\n"
           "     |\n"
-         "=========\n";
+         "=========\n"
+         "GAME OVER!\n";
             break;
     }
 }
@@ -107,5 +108,14 @@ void Hangman::guessChar(){
 
 int Hangman::getTries(){
     return tries;
+}
+
+bool Hangman::wordGuessed(){
+    if (wordBlank == word){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
