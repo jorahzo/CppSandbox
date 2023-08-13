@@ -35,7 +35,6 @@ public:
     std::string returnWord();
     std::string returnStyledWordBlank();
     std::string returnHangman();
-    void userGuess();
 private:
     std::string hangmanAscii;
     std::string word;

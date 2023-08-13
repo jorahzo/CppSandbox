@@ -9,5 +9,20 @@
 #define gameflow_hpp
 
 #include <stdio.h>
+#include <iostream>
+#include <string>
+
+class GameFlow{
+public:
+    GameFlow(){
+        std::cout << "Hello! What is your username?\n";
+        std::cin >> username;
+    }
+    void printRules();
+    std::string returnUsername();
+private:
+    std::string username{""};
+    int tries{6};
+};
 
 #endif /* gameflow_hpp */

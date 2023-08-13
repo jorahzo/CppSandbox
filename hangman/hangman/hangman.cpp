@@ -86,7 +86,6 @@ std::string Hangman::returnStyledWordBlank(){
         newWordBlank += wordBlank[i];
         newWordBlank += " ";
     }
-    wordBlank = newWordBlank;
-    return wordBlank;
+    return newWordBlank;
 }
 

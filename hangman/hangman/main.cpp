@@ -7,9 +7,11 @@
 
 #include <iostream>
 #include "hangman.hpp"
-
+#include "gameflow.hpp"
 
 int main() {
+    GameFlow gameflow;
+    gameflow.printRules();
     Hangman hangman;
     std::cout << hangman.returnWord() << "\n";
     std::cout << hangman.returnStyledWordBlank() << "\n";
