@@ -13,7 +13,7 @@ std::string GameFlow::returnUsername(){
 
 void GameFlow::printRules(){
     std::string userChoice = "";
-    std::cout << "Welcome " << username << " to hangman!\nRules:\n1. You can only guess one character at a time. \n2. You have six lives, one will be lost per incorrect guess.\n\nAre you ready to begin?\n1. Yes 2. No\n";
+    std::cout << "\nWelcome " << username << " to hangman!\nRules:\n1. You can only guess one character at a time. \n2. You have six lives, one will be lost per incorrect guess.\n\nAre you ready to begin?\n1. Yes 2. No\n";
     while (userChoice != "1" || userChoice != "yes"){
         std::cin >> userChoice;
         if (userChoice == "1" || userChoice == "yes"){

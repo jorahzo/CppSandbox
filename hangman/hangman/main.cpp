@@ -13,8 +13,14 @@ int main() {
     GameFlow gameflow;
     gameflow.printRules();
     Hangman hangman;
-    std::cout << hangman.returnWord() << "\n";
-    std::cout << hangman.returnStyledWordBlank() << "\n";
+    std::cout << hangman.returnHangman();
+    std::cout << hangman.returnStyledWordBlank();
+    while(hangman.getTries() > 0){
+        hangman.guessChar();
+        hangman.addToHangman();
+        std::cout << hangman.returnHangman();
+        std::cout << hangman.returnStyledWordBlank();
+    }
 }
 
 // Code for tests

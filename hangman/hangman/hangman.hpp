@@ -31,11 +31,14 @@ public:
             wordBlank += "_";
         }
     }
-    void addToHangman(int tries);
+    void addToHangman();
     std::string returnWord();
     std::string returnStyledWordBlank();
     std::string returnHangman();
+    void guessChar();
+    int getTries();
 private:
+    int tries{6};
     std::string hangmanAscii;
     std::string word;
     std::string wordBlank;

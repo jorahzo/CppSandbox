@@ -8,7 +8,7 @@
 #include "hangman.hpp"
 #include <iostream>
 
-void Hangman::addToHangman(int tries){
+void Hangman::addToHangman(){
     switch(tries){
         case 5:
             hangmanAscii =
@@ -87,5 +87,25 @@ std::string Hangman::returnStyledWordBlank(){
         newWordBlank += " ";
     }
     return newWordBlank;
+}
+
+void Hangman::guessChar(){
+    std::cout << "\nGuess a character:\n";
+    bool found = false;
+    char charGuess;
+    std::cin >> charGuess;
+    for (int i = 0; i < word.length(); i++){
+        if (word[i] == charGuess){
+            wordBlank[i] = charGuess;
+            found = true;
+        }
+    }
+    if (found == false){
+        tries -= 1;
+    }
+}
+
+int Hangman::getTries(){
+    return tries;
 }
 

@@ -22,7 +22,6 @@ public:
     std::string returnUsername();
 private:
     std::string username{""};
-    int tries{6};
 };
 
 #endif /* gameflow_hpp */
