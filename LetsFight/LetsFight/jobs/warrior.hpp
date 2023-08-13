@@ -15,13 +15,12 @@
 class Warrior : public Fighter{
 public:
     using Fighter::Fighter;
-    void slash(Fighter* userDefending);
-    void stab(Fighter* userDefending);
-    void guard(Fighter* userAttacking);
-    
+    void attackOne(Fighter* userAttacking, Fighter* userDefending);
+    void attackTwo(Fighter* userAttacking, Fighter* userDefending);
+    void utilityOne(Fighter* userAttacking);
+    void utilityTwo(Fighter* userAttacking);
 private:
-    std::string movePrompt {"Make a move!\n1. Attack 1\n2. Attack 2\n3. Utility 1\n4. Utility 2"}, username {""};
-
+    std::string movePrompt {"Make a move!\n1. Slash 1\n2. Stab 2\n3. Defend 1\n4. Utility 2"}, username {""};
 };
 
 #endif /* warrior_hpp */

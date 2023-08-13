@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DE896D22A7CA9A100063DC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896D12A7CA9A100063DC4 /* main.cpp */; };
-		4DE896DA2A7CA9B400063DC4 /* fighter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896D82A7CA9B400063DC4 /* fighter.cpp */; };
-		4DE896E32A80591B00063DC4 /* gameflow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E12A80591B00063DC4 /* gameflow.cpp */; };
-		4DE896E82A8062A100063DC4 /* warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E62A8062A100063DC4 /* warrior.cpp */; };
-		4DE896EB2A8062B500063DC4 /* thief.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896E92A8062B500063DC4 /* thief.cpp */; };
-		4DE896EE2A8062BE00063DC4 /* mage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896EC2A8062BE00063DC4 /* mage.cpp */; };
-		4DE896F12A8062D300063DC4 /* archer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE896EF2A8062D300063DC4 /* archer.cpp */; };
+		4D4B73622A86B9080060A8C2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B73612A86B9080060A8C2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4DE896CC2A7CA9A100063DC4 /* CopyFiles */ = {
+		4D4B735C2A86B9080060A8C2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,24 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4DE896CE2A7CA9A100063DC4 /* LetsFight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LetsFight; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DE896D12A7CA9A100063DC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4DE896D82A7CA9B400063DC4 /* fighter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fighter.cpp; sourceTree = "<group>"; };
-		4DE896D92A7CA9B400063DC4 /* fighter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fighter.hpp; sourceTree = "<group>"; };
-		4DE896E12A80591B00063DC4 /* gameflow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameflow.cpp; sourceTree = "<group>"; };
-		4DE896E22A80591B00063DC4 /* gameflow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameflow.hpp; sourceTree = "<group>"; };
-		4DE896E62A8062A100063DC4 /* warrior.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = warrior.cpp; sourceTree = "<group>"; };
-		4DE896E72A8062A100063DC4 /* warrior.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = warrior.hpp; sourceTree = "<group>"; };
-		4DE896E92A8062B500063DC4 /* thief.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thief.cpp; sourceTree = "<group>"; };
-		4DE896EA2A8062B500063DC4 /* thief.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thief.hpp; sourceTree = "<group>"; };
-		4DE896EC2A8062BE00063DC4 /* mage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mage.cpp; sourceTree = "<group>"; };
-		4DE896ED2A8062BE00063DC4 /* mage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mage.hpp; sourceTree = "<group>"; };
-		4DE896EF2A8062D300063DC4 /* archer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = archer.cpp; sourceTree = "<group>"; };
-		4DE896F02A8062D300063DC4 /* archer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = archer.hpp; sourceTree = "<group>"; };
+		4D4B735E2A86B9080060A8C2 /* LeetCode01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode01; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4B73612A86B9080060A8C2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4DE896CB2A7CA9A100063DC4 /* Frameworks */ = {
+		4D4B735B2A86B9080060A8C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,85 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4DE896C52A7CA9A100063DC4 = {
+		4D4B73552A86B9080060A8C2 = {
 			isa = PBXGroup;
 			children = (
-				4DE896D02A7CA9A100063DC4 /* LetsFight */,
-				4DE896CF2A7CA9A100063DC4 /* Products */,
+				4D4B73602A86B9080060A8C2 /* LeetCode01 */,
+				4D4B735F2A86B9080060A8C2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4DE896CF2A7CA9A100063DC4 /* Products */ = {
+		4D4B735F2A86B9080060A8C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DE896CE2A7CA9A100063DC4 /* LetsFight */,
+				4D4B735E2A86B9080060A8C2 /* LeetCode01 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4DE896D02A7CA9A100063DC4 /* LetsFight */ = {
+		4D4B73602A86B9080060A8C2 /* LeetCode01 */ = {
 			isa = PBXGroup;
 			children = (
-				4DE896D12A7CA9A100063DC4 /* main.cpp */,
-				4DE896E12A80591B00063DC4 /* gameflow.cpp */,
-				4DE896E22A80591B00063DC4 /* gameflow.hpp */,
-				4DE896F32A8063AF00063DC4 /* jobs */,
+				4D4B73612A86B9080060A8C2 /* main.cpp */,
 			);
-			path = LetsFight;
-			sourceTree = "<group>";
-		};
-		4DE896F32A8063AF00063DC4 /* jobs */ = {
-			isa = PBXGroup;
-			children = (
-				4DE896D92A7CA9B400063DC4 /* fighter.hpp */,
-				4DE896D82A7CA9B400063DC4 /* fighter.cpp */,
-				4DE896E72A8062A100063DC4 /* warrior.hpp */,
-				4DE896E62A8062A100063DC4 /* warrior.cpp */,
-				4DE896EA2A8062B500063DC4 /* thief.hpp */,
-				4DE896E92A8062B500063DC4 /* thief.cpp */,
-				4DE896ED2A8062BE00063DC4 /* mage.hpp */,
-				4DE896EC2A8062BE00063DC4 /* mage.cpp */,
-				4DE896F02A8062D300063DC4 /* archer.hpp */,
-				4DE896EF2A8062D300063DC4 /* archer.cpp */,
-			);
-			path = jobs;
+			path = LeetCode01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4DE896CD2A7CA9A100063DC4 /* LetsFight */ = {
+		4D4B735D2A86B9080060A8C2 /* LeetCode01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DE896D52A7CA9A100063DC4 /* Build configuration list for PBXNativeTarget "LetsFight" */;
+			buildConfigurationList = 4D4B73652A86B9080060A8C2 /* Build configuration list for PBXNativeTarget "LeetCode01" */;
 			buildPhases = (
-				4DE896CA2A7CA9A100063DC4 /* Sources */,
-				4DE896CB2A7CA9A100063DC4 /* Frameworks */,
-				4DE896CC2A7CA9A100063DC4 /* CopyFiles */,
+				4D4B735A2A86B9080060A8C2 /* Sources */,
+				4D4B735B2A86B9080060A8C2 /* Frameworks */,
+				4D4B735C2A86B9080060A8C2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LetsFight;
-			productName = LetsFight;
-			productReference = 4DE896CE2A7CA9A100063DC4 /* LetsFight */;
+			name = LeetCode01;
+			productName = LeetCode01;
+			productReference = 4D4B735E2A86B9080060A8C2 /* LeetCode01 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4DE896C62A7CA9A100063DC4 /* Project object */ = {
+		4D4B73562A86B9080060A8C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					4DE896CD2A7CA9A100063DC4 = {
+					4D4B735D2A86B9080060A8C2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 4DE896C92A7CA9A100063DC4 /* Build configuration list for PBXProject "LetsFight" */;
+			buildConfigurationList = 4D4B73592A86B9080060A8C2 /* Build configuration list for PBXProject "LeetCode01" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,35 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 4DE896C52A7CA9A100063DC4;
-			productRefGroup = 4DE896CF2A7CA9A100063DC4 /* Products */;
+			mainGroup = 4D4B73552A86B9080060A8C2;
+			productRefGroup = 4D4B735F2A86B9080060A8C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4DE896CD2A7CA9A100063DC4 /* LetsFight */,
+				4D4B735D2A86B9080060A8C2 /* LeetCode01 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4DE896CA2A7CA9A100063DC4 /* Sources */ = {
+		4D4B735A2A86B9080060A8C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DE896F12A8062D300063DC4 /* archer.cpp in Sources */,
-				4DE896E82A8062A100063DC4 /* warrior.cpp in Sources */,
-				4DE896D22A7CA9A100063DC4 /* main.cpp in Sources */,
-				4DE896EB2A8062B500063DC4 /* thief.cpp in Sources */,
-				4DE896DA2A7CA9B400063DC4 /* fighter.cpp in Sources */,
-				4DE896EE2A8062BE00063DC4 /* mage.cpp in Sources */,
-				4DE896E32A80591B00063DC4 /* gameflow.cpp in Sources */,
+				4D4B73622A86B9080060A8C2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4DE896D32A7CA9A100063DC4 /* Debug */ = {
+		4D4B73632A86B9080060A8C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		4DE896D42A7CA9A100063DC4 /* Release */ = {
+		4D4B73642A86B9080060A8C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +235,7 @@
 			};
 			name = Release;
 		};
-		4DE896D62A7CA9A100063DC4 /* Debug */ = {
+		4D4B73662A86B9080060A8C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -287,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		4DE896D72A7CA9A100063DC4 /* Release */ = {
+		4D4B73672A86B9080060A8C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -298,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4DE896C92A7CA9A100063DC4 /* Build configuration list for PBXProject "LetsFight" */ = {
+		4D4B73592A86B9080060A8C2 /* Build configuration list for PBXProject "LeetCode01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DE896D32A7CA9A100063DC4 /* Debug */,
-				4DE896D42A7CA9A100063DC4 /* Release */,
+				4D4B73632A86B9080060A8C2 /* Debug */,
+				4D4B73642A86B9080060A8C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DE896D52A7CA9A100063DC4 /* Build configuration list for PBXNativeTarget "LetsFight" */ = {
+		4D4B73652A86B9080060A8C2 /* Build configuration list for PBXNativeTarget "LeetCode01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DE896D62A7CA9A100063DC4 /* Debug */,
-				4DE896D72A7CA9A100063DC4 /* Release */,
+				4D4B73662A86B9080060A8C2 /* Debug */,
+				4D4B73672A86B9080060A8C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4DE896C62A7CA9A100063DC4 /* Project object */;
+	rootObject = 4D4B73562A86B9080060A8C2 /* Project object */;
 }

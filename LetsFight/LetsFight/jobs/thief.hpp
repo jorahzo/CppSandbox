@@ -15,10 +15,10 @@
 class Thief : public Fighter{
 public:
     using Fighter::Fighter;
-    void stab(Fighter *fightername);
-    void poison(Fighter *fightername);
-    void dodge(Fighter *fightername);
-    void kick(Fighter *fightername);
+    void attackOne(Fighter* userAttacking, Fighter* userDefending);
+    void attackTwo(Fighter* userAttacking, Fighter* userDefending);
+    void utilityOne(Fighter* userAttacking);
+    void utilityTwo(Fighter* userAttacking);
 private:
     std::string movePrompt {"Make a move!\n1. Stab \n2. Poison \n3. Dodge \n4. Kick"}, username {""};
 };

@@ -44,7 +44,7 @@ void Fighter::printUserStatus(){
 }
 
 // Move Select
-void Fighter::moveSelect(Fighter *userAttacking, Fighter *userDefending){
+void Fighter::moveSelect(std::unique_ptr<Fighter>& userAttacking, std::unique_ptr<Fighter>& userDefending){
     int playerChoice;
     if (userAttacking->getNPC() == false){
         std::cout << movePrompt;
@@ -58,18 +58,22 @@ void Fighter::moveSelect(Fighter *userAttacking, Fighter *userDefending){
     switch (playerChoice){
         case 1:
             userAttacking->attackOne(userAttacking, userDefending);
+            break;
         case 2:
             userAttacking->attackTwo(userAttacking, userDefending);
+            break;
         case 3:
             userAttacking->utilityOne(userDefending);
+            break;
         case 4:
             userAttacking->utilityTwo(userDefending);
+            break;
     }
 }
 
-// Attacks
-void Fighter::attackOne(Fighter* userAttacking, Fighter* userDefending){};
-void Fighter::attackTwo(Fighter* userAttacking, Fighter* userDefending){};
-void Fighter::utilityOne(Fighter* userAttacking){};
-void Fighter::utilityTwo(Fighter* userAttacking){};
+// Attacks, override in child classes
+void Fighter::attackOne(std::unique_ptr<Fighter>& userAttacking,std::unique_ptr<Fighter>& userDefending){};
+void Fighter::attackTwo(std::unique_ptr<Fighter>& userAttacking,std::unique_ptr<Fighter>& userDefending){};
+void Fighter::utilityOne(std::unique_ptr<Fighter>& userAttacking){};
+void Fighter::utilityTwo(std::unique_ptr<Fighter>& userAttacking){};
 

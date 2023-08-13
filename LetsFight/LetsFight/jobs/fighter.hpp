@@ -26,10 +26,13 @@ public:
     void printUserStatus();
     
     // Select move
-    void moveSelect(Fighter* userAttacking, Fighter* userDefending);
+    void moveSelect(std::unique_ptr<Fighter>& userAttacking, std::unique_ptr<Fighter>& userDefending);
     
     // Move placeholders, these will be overriden on each child
-    void attackOne(Fighter* userAttacking, Fighter* userDefending), attackTwo(Fighter* userAttacking, Fighter* userDefending), utilityOne(Fighter* userAttacking), utilityTwo(Fighter* userAttacking);
+    void attackOne(std::unique_ptr<Fighter>& userAttacking, std::unique_ptr<Fighter>& userDefending);
+    void attackTwo(std::unique_ptr<Fighter>& userAttacking, std::unique_ptr<Fighter>& userDefending);
+    void utilityOne(std::unique_ptr<Fighter>& userAttacking);
+    void utilityTwo(std::unique_ptr<Fighter>& userAttacking);
 
 private:
     // To be changed on a per child basis

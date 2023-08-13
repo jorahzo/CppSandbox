@@ -78,3 +78,4 @@ std::unique_ptr<Fighter> Gameflow::enemyInit(){
     }
     return enemyCharacter;
 }
+
