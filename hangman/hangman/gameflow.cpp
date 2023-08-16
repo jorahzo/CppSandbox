@@ -23,7 +23,7 @@ void GameFlow::printRules(){
             std::cout << "Reopen this application when you're ready :)\n";
             exit(0);
         }
-        std::cout << "Invalid option\n1. Yes 2. No\n";
+        std::cout << "\nInvalid option\n1. Yes 2. No\n";
     }
     
 }

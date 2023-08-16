@@ -31,19 +31,15 @@ public:
             wordBlank += "_";
         }
     }
-    void addToHangman();
-    std::string returnWord();
-    std::string returnStyledWordBlank();
-    std::string returnHangman();
-    bool wordGuessed();
-    void guessChar();
+    void addToHangman(), guessChar(char userGuess);
+    std::string returnWord(), returnStyledWordBlank(), returnHangman();
+    bool wordGuessed(), letterGuessed(char userGuess);
     int getTries();
 private:
     int tries{6};
-    std::string hangmanAscii;
-    std::string word;
-    std::string wordBlank;
-    std::vector<std::string> wordlist {"Cheese", "Horse", "Mushroom", "Lava", "Butterfly", "Laminate", "Virus", "Mississippi"};
+    std::string hangmanAscii, word, wordBlank;
+    std::vector<std::string> wordlist {"cheese", "horse", "mushroom", "lava", "butterfly", "laminate", "virus", "mississippi"};
+    std::string guessedLetters {""};
 };
 
 #endif /* hangman_hpp */

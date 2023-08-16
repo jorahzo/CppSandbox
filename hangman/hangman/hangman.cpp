@@ -8,6 +8,8 @@
 #include "hangman.hpp"
 #include <iostream>
 
+
+// Method allows us to update ascii art
 void Hangman::addToHangman(){
     switch(tries){
         case 5:
@@ -73,6 +75,8 @@ void Hangman::addToHangman(){
             break;
     }
 }
+
+// Returns
 std::string Hangman::returnHangman(){
     return hangmanAscii;
 }
@@ -80,7 +84,7 @@ std::string Hangman::returnHangman(){
 std::string Hangman::returnWord(){
     return word;
 }
-
+// Method returns a spaced out version of wordBlank, easier for user to see in console.
 std::string Hangman::returnStyledWordBlank(){
     std::string newWordBlank = "";
     for (int i = 0; i < wordBlank.size(); i++){
@@ -89,15 +93,12 @@ std::string Hangman::returnStyledWordBlank(){
     }
     return newWordBlank;
 }
-
-void Hangman::guessChar(){
-    std::cout << "\nGuess a character:\n";
+// Method to check the user's guess
+void Hangman::guessChar(char userGuess){
     bool found = false;
-    char charGuess;
-    std::cin >> charGuess;
     for (int i = 0; i < word.length(); i++){
-        if (word[i] == charGuess){
-            wordBlank[i] = charGuess;
+        if (word[i] == userGuess){
+            wordBlank[i] = userGuess;
             found = true;
         }
     }
@@ -109,7 +110,7 @@ void Hangman::guessChar(){
 int Hangman::getTries(){
     return tries;
 }
-
+// Check if word is guessed
 bool Hangman::wordGuessed(){
     if (wordBlank == word){
         return true;
@@ -119,3 +120,12 @@ bool Hangman::wordGuessed(){
     }
 }
 
+bool Hangman::letterGuessed(char userGuess){
+    for (int i = 0; i < guessedLetters.size(); i++){
+        if (guessedLetters[i] == userGuess){
+            return true;
+        }
+    }
+    guessedLetters += userGuess;
+    return false;
+}
